@@ -1,0 +1,10 @@
+# Runtime dependencies for Tigers vs Cows (Python 3.11+).
+#
+# opencv-contrib-python: MediaPipe already depends on it, so we use it instead
+#   of opencv-python; installing both puts two conflicting copies of cv2 on disk.
+# pygame-ce: drop-in replacement for pygame (still `import pygame`) that
+#   supports HarfBuzz shaping, required to render Khmer text correctly.
+numpy>=1.26
+opencv-contrib-python>=4.9
+mediapipe>=0.10.14
+pygame-ce>=2.5

@@ -1,0 +1,8 @@
+venv/
+.venv/
+__pycache__/
+*.pyc
+data/calibration.json
+data/settings.json
+build/
+dist/
